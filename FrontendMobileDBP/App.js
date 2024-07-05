@@ -4,7 +4,6 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import LoginScreen from './src/LoginScreen';
 import RegisterScreen from './src/RegisterScreen';
-import CoursesScreen from './src/CoursesScreen';
 import SensorScreen from './src/SensorScreen';
 
 const Stack = createStackNavigator();

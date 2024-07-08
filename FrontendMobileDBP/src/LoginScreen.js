@@ -1,14 +1,11 @@
 // src/LoginScreen.js
-import React, { useState, useEffect } from 'react';
-import { View, Text, TextInput, TouchableOpacity, StyleSheet, ImageBackground} from 'react-native';
+import React, { useState } from 'react';
+import { View, Text, TextInput, TouchableOpacity, StyleSheet, ImageBackground } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { login } from './api';
-import { requestPermissions, scheduleNotification } from './notificationHelper';
 import { useFonts } from 'expo-font';
 
 const backgroundImage = require('../assets/background.jpg');
-
-
 
 const LoginScreen = ({ navigation, setIsLoggedIn }) => {
   const [email, setEmail] = useState('');
@@ -18,21 +15,19 @@ const LoginScreen = ({ navigation, setIsLoggedIn }) => {
     'KodeMono': require('../assets/fonts/KodeMono-VariableFont_wght.ttf'),
   });
 
-  useEffect(() => {
-    requestPermissions();
-  }, []);
+  if (!fontsLoaded) {
+    return null; 
+  }
 
   const handleLogin = async () => {
     try {
       await login(email, password);
-      await scheduleNotification('Login Successful', 'You have successfully logged in.');
       setIsLoggedIn(true);
     } catch (error) {
       console.error('Login failed', error);
     }
   };
 
-  
   return (
     <ImageBackground source={backgroundImage} style={styles.background}>
       <View style={styles.container}>

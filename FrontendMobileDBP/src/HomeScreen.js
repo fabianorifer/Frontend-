@@ -24,11 +24,9 @@ const HomeScreen = () => {
         <Text style={styles.title}>Home</Text>
         <Image source={require('../assets/logo2_sinfondo.png')} style={styles.logo} />
         <View style={[styles.buttonContainer, { flexDirection: isPortrait ? 'column' : 'row' }]}>
-          <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('AddRecipeScreen')}>
             <LinearGradient colors={['#6200ee', '#a566ff']} style={styles.buttonGradient}>
               <Text style={styles.buttonText}>Agregar Receta</Text>
             </LinearGradient>
-          </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('DailyAdviceScreen')}>
             <LinearGradient colors={['#6200ee', '#a566ff']} style={styles.buttonGradient}>
               <Text style={styles.buttonText}>Agregar Comida</Text>

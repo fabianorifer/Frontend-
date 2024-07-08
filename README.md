@@ -1,23 +1,23 @@
 # 📋 Nutrifit - Mobile Version
 ![Logo](https://github.com/fabianorifer/Frontend_Mobile/blob/main/NutriFit__Mesa_de_trabajo_1.png?raw=true)
 # Instalación
-- Instalamos las dependencias necesarias:
+- Instala las dependencias necesarias:
 ```terminal
    npm install   
 ```
-- Instalamos React Navigation:
+- Instala React Navigation:
 ```terminal
    npm install @react-navigation/native @react-navigation/stack  
 ```
 Este es el paquete principal para la navegación en React Native. Proporciona la infraestructura básica y las herramientas necesarias para que la navegación funcione. 
 
-- Instalamos Axios:
+- Instala Axios:
 ```terminal
    npm install axios   
 ```
 Tener instalado axios facilita realizar solicitudes HTTP, como GET, POST, PUT, DELETE, entre otras. Esto es útil para interactuar con APIs y servicios web.
 
-- Instalamos AsyncStorage:
+- Instala AsyncStorage:
 ```terminal
    npm install @react-native-async-storage/async-storage   
 ```
@@ -37,7 +37,8 @@ Expo Secure Storage nos servirá para el guardado de tokens y credenciales.
 
 - Instala Expo Notifications:
 ```terminal
-   npx expo install expo-notifications   
+   npx expo install expo-notifications
+   expo install expo-permissions   
 ```
 Esta librería como su propio nombre lo dice, nos sirve para el gestionamiento de eventos en nuestra aplicación.
 
@@ -46,6 +47,14 @@ Esta librería como su propio nombre lo dice, nos sirve para el gestionamiento d
    npx expo install expo-sensors  
 ```
 Expo Sensors es una API de sensores para React Native que se utiliza para acceder a los sensores del dispositivo móvil. Instalando esto, tendremos acceso para la implementación y uso de los sensores que necesitemos.
+
+- No olvidemos de instalar estas tambien
+```terminal
+   npx expo install expo-font
+   npx expo install expo-app-loading
+   npx expo install expo-linear-gradient
+```
+Estas librerías te ayudan a crear una aplicación más atractiva y funcional, asegurando que los recursos necesarios estén listos antes de que el usuario interactúe con la interfaz y añadiendo elementos visuales agradables.
 
 # Final
 Ahora puedes ejecutar tu aplicación en tu dispositivo móvil y probarla.

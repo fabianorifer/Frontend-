@@ -1,5 +1,5 @@
 # 📋 Nutrifit - Mobile Version
-
+![Logo](https://github.com/fabianorifer/Frontend_Mobile/blob/main/NutriFit__Mesa_de_trabajo_1.png?raw=true)
 # Instalación
 - Instalamos las dependencias necesarias:
 ```terminal

@@ -37,7 +37,8 @@ Expo Secure Storage nos servirá para el guardado de tokens y credenciales.
 
 - Instala Expo Notifications:
 ```terminal
-   npx expo install expo-notifications   
+   npx expo install expo-notifications
+   expo install expo-permissions   
 ```
 Esta librería como su propio nombre lo dice, nos sirve para el gestionamiento de eventos en nuestra aplicación.
 
